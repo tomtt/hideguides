@@ -7,3 +7,6 @@
 [submodule "vendor/plugins/rspec-rails"]
 	path = vendor/plugins/rspec-rails
 	url = git://github.com/dchelimsky/rspec-rails.git
+[submodule "vendor/plugins/rspec-on-rails-matchers"]
+	path = vendor/plugins/rspec-on-rails-matchers
+	url = git://github.com/joshknowles/rspec-on-rails-matchers.git
