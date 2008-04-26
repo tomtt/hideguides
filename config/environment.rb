@@ -16,9 +16,15 @@ Rails::Initializer.run do |config|
   # -- all .rb files in that directory are automatically loaded.
   # See Rails::Configuration for more options.
 
-  # Skip frameworks you're not going to use (only works if using vendor/rails).
-  # To use Rails without a database, you must remove the Active Record framework
+  # Skip frameworks you're not going to use. To use Rails without a database
+  # you must remove the Active Record framework.
   # config.frameworks -= [ :active_record, :active_resource, :action_mailer ]
+
+  # Specify gems that this application depends on. 
+  # They can then be installed with rake gem:install on new installations.
+  # config.gem "bj"
+  # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
+  # config.gem "aws-s3", :lib => "aws/s3"
 
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
@@ -32,13 +38,18 @@ Rails::Initializer.run do |config|
   # (by default production uses :info, the others :debug)
   # config.log_level = :debug
 
+  # Make Time.zone default to the specified zone, and make ActiveRecord store time values
+  # in the database in UTC, and return them converted to the specified local zone.
+  # Run `rake -D time` for a list of tasks for finding time zone names. Uncomment to use default local time.
+  config.time_zone = 'UTC'
+
   # Your secret key for verifying cookie session data integrity.
   # If you change this key, all old sessions will become invalid!
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
     :session_key => '_rails_app_session',
-    :secret      => '78161c89601252b8f7c7fefdae5adfb47cb0e93d2251ed250cd3042a3d17601572b2240a8a844eebbe7b5db0b3f387c124f325e9fee1351b56804f9707f2ceaf'
+    :secret      => '35d306837589150ff29cae13f8b849c9f34e28ff0b1c87048c7ae925742753097b8cfb229c05af11e8ac030ebb176e069a7589f470391cbb0f6139d163056afc'
   }
 
   # Use the database for sessions instead of the cookie-based default,
@@ -53,7 +64,4 @@ Rails::Initializer.run do |config|
 
   # Activate observers that should always be running
   # config.active_record.observers = :cacher, :garbage_collector
-
-  # Make Active Record use UTC-base instead of local time
-  # config.active_record.default_timezone = :utc
 end
