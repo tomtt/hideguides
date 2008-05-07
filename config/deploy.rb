@@ -10,6 +10,9 @@ set :deploy_via, :remote_cache
 set :branch, "origin/master"
 set :git_enable_submodules, 1
 ssh_options[:host_key] = 'ssh-dss'
+ssh_options[:keys] = [File.join(ENV['HOME'], '.ssh', 'id_rsa')]
+ssh_options[:forward_agent] = true
+ssh_options[:paranoid] = false
 default_run_options[:pty] = true
 
 # set :gems_for_project, %w(dr_nic_magic_models swiftiply) # list of gems to be installed
