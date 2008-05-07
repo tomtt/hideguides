@@ -22,3 +22,6 @@
 [submodule "vendor/plugins/webrat"]
 	path = vendor/plugins/webrat
 	url = git://github.com/brynary/webrat.git
+[submodule "vendor/plugins/scaffold_views"]
+	path = vendor/plugins/scaffold_views
+	url = git://github.com/tomtt/scaffold_views.git
