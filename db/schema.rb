@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080621170453) do
+ActiveRecord::Schema.define(:version => 20080621171313) do
 
   create_table "point_of_interests", :force => true do |t|
     t.string   "latitude"
@@ -41,6 +41,12 @@ ActiveRecord::Schema.define(:version => 20080621170453) do
     t.datetime "updated_at"
     t.string   "remember_token"
     t.datetime "remember_token_expires_at"
+  end
+
+  create_table "walls", :force => true do |t|
+    t.integer  "point_of_interest_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
