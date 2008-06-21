@@ -9,7 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080427130128) do
+ActiveRecord::Schema.define(:version => 20080621170453) do
+
+  create_table "point_of_interests", :force => true do |t|
+    t.string   "latitude"
+    t.string   "longtitude"
+    t.string   "title"
+    t.string   "address"
+    t.string   "type"
+    t.integer  "lonely_planet_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
