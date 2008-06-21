@@ -14,7 +14,5 @@ class ApplicationController < ActionController::Base
   protect_from_forgery :secret => 'ef6a2bba33fae773b05878aaee5455c8'
 
   @fireeagle = YAML.load(File.open(File.join(RAILS_ROOT, 'config', 'fireeagle.yml')))
-  debugger
-   a=2
    
 end
