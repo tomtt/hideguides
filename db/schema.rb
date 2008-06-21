@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080621171313) do
+ActiveRecord::Schema.define(:version => 20080621173320) do
 
   create_table "point_of_interests", :force => true do |t|
     t.string   "latitude"
@@ -18,6 +18,17 @@ ActiveRecord::Schema.define(:version => 20080621171313) do
     t.string   "address"
     t.string   "type"
     t.integer  "lonely_planet_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "postings", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.boolean  "posted_from_poi"
+    t.integer  "location_posted_from"
+    t.integer  "wall_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
