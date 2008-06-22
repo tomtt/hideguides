@@ -1,0 +1,2 @@
+class FireeagleController < ApplicationController
+end
