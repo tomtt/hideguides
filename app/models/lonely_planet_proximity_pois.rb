@@ -9,7 +9,7 @@ class LonelyPlanetProximityPois
     return [] unless doc
 
     pois = doc/:poi
-    pois.map { |poi| PointOfInterest.find_or_create_by_xml(poi) }
+    pois.map { |poi| Poi.find_or_create_by_xml(poi) }
     
     # book_elements = (doc/:BookData)
     # return book if book_elements.blank?

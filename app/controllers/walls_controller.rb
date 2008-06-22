@@ -1,9 +1,9 @@
 class WallsController < ApplicationController
   def show
-    @poi = PointOfInterest.find(params['poi_id'])
-    @wall = Wall.find_by_point_of_interest_id(params['poi_id'])
+    @poi = Poi.find(params['poi_id'])
+    @wall = Wall.find_by_poi_id(params['poi_id'])
     if !@wall
-      @wall = Wall.create!(:point_of_interest => @poi)
+      @wall = Wall.create!(:poi => @poi)
     end
     @postings = @wall.postings
   end
