@@ -2,6 +2,7 @@ class CreateFireeagleTokens < ActiveRecord::Migration
   def self.up
     create_table :fireeagle_tokens do |t|
       t.string :token
+      t.string :secret
       t.references :user
 
       t.timestamps

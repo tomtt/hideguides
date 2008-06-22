@@ -13,6 +13,7 @@ ActiveRecord::Schema.define(:version => 20080621234116) do
 
   create_table "fireeagle_tokens", :force => true do |t|
     t.string   "token"
+    t.string   "secret"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
