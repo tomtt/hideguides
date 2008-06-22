@@ -5,8 +5,8 @@ set :domain, "www.hideguides.com"
 set :user, "tomtt"
 set :scm, :git
 set :repository, "git://github.com/tomtt/hideguides.git"
-set :repository_cache, "git_cache"
-set :deploy_via, :remote_cache
+# set :repository_cache, "git_cache"
+# set :deploy_via, :remote_cache
 set :branch, "master"
 set :git_enable_submodules, 1
 ssh_options[:host_key] = 'ssh-dss'
