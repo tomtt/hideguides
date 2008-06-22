@@ -4,8 +4,8 @@
 class ApplicationController < ActionController::Base
   include AuthenticatedSystem
   before_filter :login_required
-  # before_filter :get_fireeagle_location
-
+  before_filter :get_fireeagle_location
+  
   filter_parameter_logging "password"
 
   helper :all # include all helpers, all the time
@@ -17,9 +17,12 @@ class ApplicationController < ActionController::Base
   def get_fireeagle_location
     fireeagle = YAML.load(File.open(File.join(RAILS_ROOT, 'config', 'fireeagle.yml')))
     client = FireEagle::Client.new(:consumer_key => fireeagle['consumer_key'],
-	      :consumer_secret => fireeagle['consumer_secret'])
+                                   :consumer_secret => fireeagle['consumer_secret'])
     client.get_request_token()
-    client.convert_to_access_token()
+    fireeagle_token = FireeagleToken.find_or_create_by_user_id(current_user.id)
+    fireeagle_token.update_attributes(:token => client.request_token.token,
+                                      :secret => client.request_token.secret)
+    redirect_to client.authorization_url
     true
   end
 end
