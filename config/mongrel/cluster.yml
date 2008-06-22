@@ -1,0 +1,10 @@
+--- 
+user: mongrel_hideguides
+group: app_hideguides
+cwd: /u/apps/hideguides/current
+log_file: /u/apps/hideguides/shared/log/mongrel.log
+port: "8000"
+environment: production
+address: 127.0.0.1
+pid_file: /u/apps/hideguides/shared/pids/mongrel.pid
+servers: 2
