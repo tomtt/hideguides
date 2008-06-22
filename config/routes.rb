@@ -1,7 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :users
-  map.resources :pois do |poi|
-    poi.resource :wall
+  
+  map.resources :pois, :member => { :nearby => :get } do |poi|
+    poi.resource :wall do |wall|
+      wall.resources :postings
+    end
   end
   
   map.resource :session
