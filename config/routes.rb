@@ -1,6 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :users
-
+  map.resources :pois do |poi|
+    poi.resource :wall
+  end
+  
   map.resource :session
   map.resource :home
   map.root :controller => "homes", :action => "show"

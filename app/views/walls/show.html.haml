@@ -1,0 +1,7 @@
+%p
+  Point of interest:
+  = @poi.title
+%p 
+  Posts:
+  %table
+    = render(:partial => 'post', :collection => @posts)

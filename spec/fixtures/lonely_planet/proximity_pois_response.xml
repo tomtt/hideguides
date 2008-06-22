@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://api.lonelyplanet.com/services/get/lps.proximity_pois/xml/9c6e3xwa84nkznduhc87xdcv/51.593986/-0.132126/*/*/5/eng/100 -->
+<places_of_interest xmlns="http://content.lonelyplanet.com/services" language="eng">
+  <types>*</types>
+  <latitude>51.593986</latitude>
+  <longitude>-0.132126</longitude>
+  <proximity_pois count="16">
+    <poi node_id="67918" type="see">
+      <title>Alexandra Park &amp; Palace</title>
+      <address>Alexandra Palace Way</address>
+      <neighbourhood>Muswell Hill</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,castle,food onsite,park</tags>
+      <distance>0.0879728069575583</distance>
+      <latitude>51.5942</latitude>
+      <longitude>-0.1309</longitude>
+    </poi>
+    <poi node_id="67690" type="see">
+      <title>Highgate Wood</title>
+      <address>Muswell Hill Rd</address>
+      <neighbourhood>Highgate</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,park</tags>
+      <distance>1.67836005017951</distance>
+      <latitude>51.5835</latitude>
+      <longitude>-0.1496</longitude>
+    </poi>
+    <poi node_id="68616" type="night">
+      <title>Boogaloo</title>
+      <address>312 Archway Rd</address>
+      <neighbourhood>Highgate</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,live music,bar</tags>
+      <distance>2.11849274922675</distance>
+      <latitude>51.5765</latitude>
+      <longitude>-0.1443</longitude>
+    </poi>
+    <poi node_id="68668" type="night">
+      <title>Wrestlers</title>
+      <address>98 North Hill Rd</address>
+      <neighbourhood>Highgate</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,pub</tags>
+      <distance>2.45486322612604</distance>
+      <latitude>51.5748</latitude>
+      <longitude>-0.1497</longitude>
+    </poi>
+    <poi node_id="37451" type="see">
+      <title>Highgate Cemetery</title>
+      <address>Swain's Lane N6, London</address>
+      <neighbourhood>Highgate</neighbourhood>
+      <destination_id>37426</destination_id>
+      <tags>lp,cemetery</tags>
+      <distance>3.05089560092691</distance>
+      <latitude>51.568</latitude>
+      <longitude>-0.1463</longitude>
+    </poi>
+    <poi node_id="67838" type="see">
+      <title>Highgate Cemetery</title>
+      <address>Swain's Lane</address>
+      <neighbourhood>Highgate</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,cemetery</tags>
+      <distance>3.17773245507723</distance>
+      <latitude>51.5668</latitude>
+      <longitude>-0.1463</longitude>
+    </poi>
+    <poi node_id="67854" type="see">
+      <title>Kenwood House</title>
+      <address>Hampstead Lane</address>
+      <neighbourhood>Hampstead</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,significant house,art gallery</tags>
+      <distance>3.52203548549197</distance>
+      <latitude>51.5713</latitude>
+      <longitude>-0.1677</longitude>
+    </poi>
+    <poi node_id="68552" type="night">
+      <title>Kenwood House</title>
+      <address>Hampstead Lane</address>
+      <neighbourhood>Hampstead</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,opera,performance,classical music</tags>
+      <distance>3.52203548549197</distance>
+      <latitude>51.5713</latitude>
+      <longitude>-0.1677</longitude>
+    </poi>
+    <poi node_id="68554" type="night">
+      <title>Spaniard's Inn</title>
+      <address>Spaniards Rd</address>
+      <neighbourhood>Hampstead</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,pub,celebrity</tags>
+      <distance>3.96339725027794</distance>
+      <latitude>51.5701</latitude>
+      <longitude>-0.1747</longitude>
+    </poi>
+    <poi node_id="67706" type="see">
+      <title>Hampstead Heath</title>
+      <address>Highgate Road</address>
+      <neighbourhood>Hampstead</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,free,views,gay/lesbian,literary,park</tags>
+      <distance>4.3166974872368</distance>
+      <latitude>51.564</latitude>
+      <longitude>-0.1718</longitude>
+    </poi>
+    <poi node_id="68490" type="night">
+      <title>Forum</title>
+      <address>9-17 Highgate Rd</address>
+      <neighbourhood>Kentish Town</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,live music,club/disco</tags>
+      <distance>4.74824896145542</distance>
+      <latitude>51.5517</latitude>
+      <longitude>-0.1417</longitude>
+    </poi>
+    <poi node_id="68620" type="night">
+      <title>Bull &amp; Gate</title>
+      <address>389 Kentish Town Rd</address>
+      <neighbourhood>Kentish Town</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,live music,bar</tags>
+      <distance>4.77677533219389</distance>
+      <latitude>51.5514</latitude>
+      <longitude>-0.1412</longitude>
+    </poi>
+    <poi node_id="67946" type="see">
+      <title>No 2 Willow Rd</title>
+      <address>2 Willow Rd</address>
+      <neighbourhood>Hampstead</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,architectural highlight,significant house</tags>
+      <distance>4.82640631994381</distance>
+      <latitude>51.5572</latitude>
+      <longitude>-0.1692</longitude>
+    </poi>
+    <poi node_id="67268" type="eat">
+      <title>Wells Tavern</title>
+      <address>30 Well Walk</address>
+      <neighbourhood>Hampstead</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>lp,European</tags>
+      <distance>4.83289197637427</distance>
+      <latitude>51.5589</latitude>
+      <longitude>-0.1734</longitude>
+    </poi>
+    <poi node_id="67914" type="see">
+      <title>Burgh House</title>
+      <address>New End Sq</address>
+      <neighbourhood>Hampstead</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>museum,lp,food onsite,art gallery</tags>
+      <distance>4.89993872605584</distance>
+      <latitude>51.5587</latitude>
+      <longitude>-0.1746</longitude>
+    </poi>
+    <poi node_id="67644" type="see">
+      <title>Keats House</title>
+      <address>Keats Grove, Wentworth Pl</address>
+      <neighbourhood>Hampstead</neighbourhood>
+      <destination_id>66967</destination_id>
+      <tags>museum,lp</tags>
+      <distance>4.93008823973135</distance>
+      <latitude>51.5557</latitude>
+      <longitude>-0.1681</longitude>
+    </poi>
+  </proximity_pois>
+</places_of_interest>

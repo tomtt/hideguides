@@ -14,7 +14,6 @@ class ApplicationController < ActionController::Base
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery :secret => 'ef6a2bba33fae773b05878aaee5455c8'
 
-   
   def get_fireeagle_location
     fireeagle = YAML.load(File.open(File.join(RAILS_ROOT, 'config', 'fireeagle.yml')))
     client = FireEagle::Client.new(:consumer_key => fireeagle['consumer_key'],
