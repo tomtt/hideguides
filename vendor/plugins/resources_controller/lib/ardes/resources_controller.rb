@@ -451,7 +451,8 @@ module Ardes#:nodoc:
         include ResourcesController::InstanceMethods, ResourcesController::NamedRouteHelper
       end
 
-      before_filter(:load_enclosing_resources, when_options) unless find_filter(:load_enclosing_resources)
+      # before_filter(:load_enclosing_resources, when_options) unless find_filter(:load_enclosing_resources)
+      before_filter(:load_enclosing_resources, when_options) unless filter_chain.map(&:method).include?(:load_enclosing_resources) 
       
       write_inheritable_attribute(:specifications, [])
       specifications << '*' unless options.delete(:load_enclosing) == false
