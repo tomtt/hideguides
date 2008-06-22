@@ -9,7 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080621173320) do
+ActiveRecord::Schema.define(:version => 20080621234116) do
+
+  create_table "fireeagle_tokens", :force => true do |t|
+    t.string   "token"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "point_of_interests", :force => true do |t|
     t.string   "latitude"
