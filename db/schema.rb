@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080621234116) do
+ActiveRecord::Schema.define(:version => 20080622110542) do
 
   create_table "fireeagle_tokens", :force => true do |t|
     t.string   "token"
@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20080621234116) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "oauth_token"
   end
 
   create_table "pois", :force => true do |t|
