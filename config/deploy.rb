@@ -1,10 +1,10 @@
 require 'deprec'
 
-set :application, "rails_app"
-set :domain, "www.rails_app.com"
+set :application, "hideguides"
+set :domain, "www.hideguides.com"
 set :user, "tomtt"
 set :scm, :git
-set :repository, "gitrepos:rails_app.git"
+set :repository, "git://github.com/tomtt/hideguides.git"
 set :repository_cache, "git_cache"
 set :deploy_via, :remote_cache
 set :branch, "origin/master"
