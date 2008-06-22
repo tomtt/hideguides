@@ -1,4 +1,4 @@
-class CreatePointOfInterests < ActiveRecord::Migration
+class CreatePois < ActiveRecord::Migration
   # <poi node_id="12783" type="see">
   #   <title>Jewish Museum</title>
   #   <address>Lindenstrasse 9-14</address>
@@ -11,7 +11,7 @@ class CreatePointOfInterests < ActiveRecord::Migration
   # </poi>
 
   def self.up
-    create_table :point_of_interests do |t|
+    create_table :pois do |t|
       t.string :latitude, :longtitude, :title, :address, :type
       t.integer :lonely_planet_id
       t.timestamps
@@ -19,6 +19,6 @@ class CreatePointOfInterests < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :point_of_interests
+    drop_table :pois
   end
 end

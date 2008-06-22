@@ -1,7 +1,7 @@
 class CreateWalls < ActiveRecord::Migration
   def self.up
     create_table :walls do |t|
-      t.references :point_of_interest
+      t.references :poi
 
       t.timestamps
     end

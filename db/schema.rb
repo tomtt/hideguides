@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 20080621234116) do
     t.datetime "updated_at"
   end
 
-  create_table "point_of_interests", :force => true do |t|
+  create_table "pois", :force => true do |t|
     t.string   "latitude"
     t.string   "longtitude"
     t.string   "title"
@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(:version => 20080621234116) do
   end
 
   create_table "walls", :force => true do |t|
-    t.integer  "point_of_interest_id"
+    t.integer  "poi_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
