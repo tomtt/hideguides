@@ -1,0 +1,15 @@
+%p
+  Title:
+  %br
+  = @posting.title
+  %br
+  Message:
+  %br
+  =h @posting.body
+  %br
+  Posted by:
+  %br
+  = @posting.user.login
+  Time posted:
+  %br
+  = @posting.created_at

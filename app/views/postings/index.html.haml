@@ -1,0 +1,9 @@
+%p
+  Point of interest:
+  = @poi && @poi.title
+%p
+  Postings:
+  %table
+    = render(:partial => 'posting', :collection => @postings)
+%p
+  = link_to 'Leave a message here', new_poi_wall_posting_path(@poi)

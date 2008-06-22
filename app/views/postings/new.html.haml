@@ -1,0 +1,15 @@
+= error_messages_for :posting
+- form_for :posting, :url => poi_wall_postings_path(@poi) do |f|
+  %p
+    %label{:for => "title"}
+      Title
+    %br
+    = f.text_field :title
+  %p
+    %label{:for => "body"}
+      Your message
+    %br
+    = f.text_area :body
+
+  %p
+    = submit_tag 'Post your message'
