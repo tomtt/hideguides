@@ -25,6 +25,3 @@
 [submodule "vendor/plugins/scaffold_views"]
 	path = vendor/plugins/scaffold_views
 	url = git://github.com/tomtt/scaffold_views.git
-[submodule "vendor/plugins/engines"]
-	path = vendor/plugins/engines
-	url = git://github.com/lazyatom/engines.git
