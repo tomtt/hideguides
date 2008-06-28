@@ -49,6 +49,7 @@ Rails::Initializer.run do |config|
   config.gem 'hpricot'
   config.gem 'fireeagle'
   config.gem 'oauth'
+  config.gem 'GeoRuby'
   
   # Your secret key for verifying cookie session data integrity.
   # If you change this key, all old sessions will become invalid!
