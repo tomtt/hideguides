@@ -3,6 +3,7 @@ require 'deprec'
 set :application, "hideguides"
 set :domain, "www.jamagam.com"
 set :user, "tomtt"
+set :runner, "tomtt"
 set :scm, :git
 set :repository, "git://github.com/tomtt/hideguides.git"
 # set :repository_cache, "git_cache"
