@@ -1,0 +1,33 @@
+== 0.7.1.0
+
+* Fix OAuth Dependency Issue
+
+== 0.6.3
+
+* Bugfix for Ruby 1.9
+
+== 0.6.2
+
+* Offload heavy lifting to OAuth for tokens and signing requests
+* Add time parameter to Client#recent
+* Change lookup params from :cid to :cellid to follow Fire Eagle
+* Cleaned up specs
+
+== 0.6.1
+
+* Remove 'not implemented' message
+* Remove JSON requirement
+
+== 0.6.0
+
+* Complete rewrite
+
+== 0.0.2
+
+* Fix callback_url
+* Add token_url
+
+== 0.0.1
+
+* Initial version
+* Works

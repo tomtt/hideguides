@@ -47,6 +47,8 @@ Rails::Initializer.run do |config|
 
   config.gem 'ruby-debug'
   config.gem 'hpricot'
+  config.gem 'fireeagle'
+  config.gem 'oauth'
   
   # Your secret key for verifying cookie session data integrity.
   # If you change this key, all old sessions will become invalid!

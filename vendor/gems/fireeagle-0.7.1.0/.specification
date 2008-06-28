@@ -1,0 +1,107 @@
+--- !ruby/object:Gem::Specification 
+name: fireeagle
+version: !ruby/object:Gem::Version 
+  version: 0.7.1.0
+platform: ruby
+authors: 
+- Jesse Newland
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2008-05-02 00:00:00 +01:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: oauth
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 0.2.1
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: hpricot
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: "0.6"
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: GeoRuby
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 1.3.2
+    version: 
+description: Ruby wrapper for Yahoo!'s FireEagle
+email: 
+- jnewland@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- History.txt
+- License.txt
+- Manifest.txt
+- README.txt
+files: 
+- config/hoe.rb
+- config/requirements.rb
+- History.txt
+- License.txt
+- Manifest.txt
+- README.txt
+- Rakefile
+- lib/fireeagle.rb
+- lib/fireeagle/client.rb
+- lib/fireeagle/location.rb
+- lib/fireeagle/response.rb
+- lib/fireeagle/user.rb
+- lib/fireeagle/version.rb
+- setup.rb
+- spec/fireeagle_location_spec.rb
+- spec/fireeagle_response_spec.rb
+- spec/fireeagle_spec.rb
+- spec/spec.opts
+- spec/spec_helper.rb
+- tasks/environment.rake
+- tasks/rspec.rake
+has_rdoc: true
+homepage: http://fireeagle.rubyforge.org
+post_install_message: 
+rdoc_options: 
+- --main
+- README.txt
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: fireeagle
+rubygems_version: 1.2.0
+signing_key: 
+specification_version: 2
+summary: Ruby wrapper for Yahoo!'s FireEagle
+test_files: []
+
