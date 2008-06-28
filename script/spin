@@ -1,0 +1,1 @@
+mongrel_rails cluster::start -C /u/apps/hideguides/current/config/mongrel_cluster.yml
